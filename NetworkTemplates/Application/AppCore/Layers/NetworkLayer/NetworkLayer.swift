@@ -24,8 +24,9 @@ class NetworkLayer {
     }
     
     //Services
-    let imageRequestService: FetchImageServiceType
-    let basicRequestService: BasicRequestServiceType
+    private let imageRequestService: FetchImageServiceType
+    private let basicRequestService: BasicRequestServiceType
+    private let backgroundRequestService: BackgroundRequestService
     
     //Publishers
     var imageData: Publisher<Data?> = Publisher(nil)
@@ -38,6 +39,7 @@ extension NetworkLayer: NetworkLayerType {
         case .fetchImage: imageRequestService.fetchData()
         case .basicGetRequest: basicRequestService.fetchData(for: .get)
         case .basicPostRequest(let data): basicRequestService.fetchData(for: .post(withData: data))
+        case .backgroundRequest: backgroundRequestService.fetchData()
         }
     }
 }

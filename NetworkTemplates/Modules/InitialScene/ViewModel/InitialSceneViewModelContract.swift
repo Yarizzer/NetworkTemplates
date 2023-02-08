@@ -9,4 +9,5 @@ enum InitialSceneCellType {
     case imageDownload
     case basicGetRequest
     case basicPostRequest
+    case backgroundDownloadRequest
 }

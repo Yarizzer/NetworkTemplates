@@ -60,6 +60,8 @@ extension BasicRequestService: BasicRequestServiceType {
                 do {
                     let json = try JSONSerialization.jsonObject(with: data, options: [])
                     
+                    writeLog(type: .debug, message: "Got json from data")
+                    
                     newItem = try JSONDecoder().decode(BasicRequestModel.self, from: data)
                 } catch {
                     print(error)

@@ -25,8 +25,9 @@ extension InitialSceneInteractor: InitialSceneInteractable {
         case .routeToScene(let type):
             switch type {
             case .imageDownload: router.routeTo(scene: .imageDownload)
-            case .basicGetRequest: router.routeTo(scene: .basicGetResponse)
-            case .basicPostRequest: router.routeTo(scene: .basicPostREsponse)
+            case .basicGetRequest: router.routeTo(scene: .basicGetRequest)
+            case .basicPostRequest: router.routeTo(scene: .basicPostRequest)
+            case .backgroundDownloadRequest: router.routeTo(scene: .backgroundDownloadRequest)
             }
 		}
 	}

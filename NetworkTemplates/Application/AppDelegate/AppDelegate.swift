@@ -25,4 +25,3 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         router?.routeToInitialScene()
     }
 }
-

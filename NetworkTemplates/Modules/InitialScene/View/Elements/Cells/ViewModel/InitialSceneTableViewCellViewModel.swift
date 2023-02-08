@@ -23,6 +23,7 @@ extension InitialSceneTableViewCellViewModel: InitialSceneTableViewCellViewModel
         case .imageDownload: return Constants.imageDownloadTypeValue
         case .basicGetRequest: return Constants.basicGetRequestTypeValue
         case .basicPostRequest: return Constants.basicPostRequestTypeValue
+        case .backgroundDownloadRequest: return Constants.backgroundDownloadRequestTypeValue
         }
     }
 }
@@ -32,5 +33,6 @@ extension InitialSceneTableViewCellViewModel {
         static let imageDownloadTypeValue = "Image download type"
         static let basicGetRequestTypeValue = "Basic get request type"
         static let basicPostRequestTypeValue = "Basic post request type"
+        static let backgroundDownloadRequestTypeValue = "Background request type"
     }
 }

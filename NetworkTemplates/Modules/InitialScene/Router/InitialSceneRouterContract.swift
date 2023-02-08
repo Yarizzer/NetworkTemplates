@@ -9,7 +9,8 @@
 struct InitialSceneRoutableContractData {
 	enum InitialSceneRoutableSceneType {
 		case imageDownload
-        case basicGetResponse
-        case basicPostREsponse
+        case basicGetRequest
+        case basicPostRequest
+        case backgroundDownloadRequest
 	}
 }

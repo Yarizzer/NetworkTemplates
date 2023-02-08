@@ -41,6 +41,18 @@
 		114B0D0B29838CE600A35A38 /* BasicGetRequestSceneViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 114B0CFF29838CE600A35A38 /* BasicGetRequestSceneViewModel.swift */; };
 		114B0D0C29838CE600A35A38 /* BasicGetRequestSceneInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 114B0D0029838CE600A35A38 /* BasicGetRequestSceneInteractor.swift */; };
 		114B0D0D29838CE600A35A38 /* BasicGetRequestScenePresenterContract.swift in Sources */ = {isa = PBXBuildFile; fileRef = 114B0D0129838CE600A35A38 /* BasicGetRequestScenePresenterContract.swift */; };
+		118E77D02993EF8200D413DC /* BackgroundDownloadRequestSceneRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 118E77C42993EF8200D413DC /* BackgroundDownloadRequestSceneRouter.swift */; };
+		118E77D22993EF8200D413DC /* BackgroundDownloadRequestSceneViewControllerContract.swift in Sources */ = {isa = PBXBuildFile; fileRef = 118E77C62993EF8200D413DC /* BackgroundDownloadRequestSceneViewControllerContract.swift */; };
+		118E77D32993EF8200D413DC /* BackgroundDownloadRequestScenePresenterService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 118E77C72993EF8200D413DC /* BackgroundDownloadRequestScenePresenterService.swift */; };
+		118E77D42993EF8200D413DC /* BackgroundDownloadRequestSceneInteractorContract.swift in Sources */ = {isa = PBXBuildFile; fileRef = 118E77C82993EF8200D413DC /* BackgroundDownloadRequestSceneInteractorContract.swift */; };
+		118E77D52993EF8200D413DC /* BackgroundDownloadRequestSceneViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 118E77C92993EF8200D413DC /* BackgroundDownloadRequestSceneViewController.xib */; };
+		118E77D62993EF8200D413DC /* BackgroundDownloadRequestSceneInteractorService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 118E77CA2993EF8200D413DC /* BackgroundDownloadRequestSceneInteractorService.swift */; };
+		118E77D72993EF8200D413DC /* BackgroundDownloadRequestScenePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 118E77CB2993EF8200D413DC /* BackgroundDownloadRequestScenePresenter.swift */; };
+		118E77D82993EF8200D413DC /* BackgroundDownloadRequestSceneViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 118E77CC2993EF8200D413DC /* BackgroundDownloadRequestSceneViewController.swift */; };
+		118E77D92993EF8200D413DC /* BackgroundDownloadRequestSceneViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 118E77CD2993EF8200D413DC /* BackgroundDownloadRequestSceneViewModel.swift */; };
+		118E77DA2993EF8200D413DC /* BackgroundDownloadRequestSceneInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 118E77CE2993EF8200D413DC /* BackgroundDownloadRequestSceneInteractor.swift */; };
+		118E77DB2993EF8200D413DC /* BackgroundDownloadRequestScenePresenterContract.swift in Sources */ = {isa = PBXBuildFile; fileRef = 118E77CF2993EF8200D413DC /* BackgroundDownloadRequestScenePresenterContract.swift */; };
+		118E77E52993FF7B00D413DC /* BackgroundRequestService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 118E77E42993FF7B00D413DC /* BackgroundRequestService.swift */; };
 		11ABDA7C2982A15900C5AC1D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11ABDA7B2982A15900C5AC1D /* AppDelegate.swift */; };
 		11ABDA852982A15C00C5AC1D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 11ABDA842982A15C00C5AC1D /* Assets.xcassets */; };
 		11ABDA882982A15C00C5AC1D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 11ABDA862982A15C00C5AC1D /* LaunchScreen.storyboard */; };
@@ -55,6 +67,19 @@
 		11C6CF0F298A16B2008078F4 /* BasicPostRequestSceneViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11C6CF03298A16B2008078F4 /* BasicPostRequestSceneViewModel.swift */; };
 		11C6CF10298A16B2008078F4 /* BasicPostRequestSceneInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11C6CF04298A16B2008078F4 /* BasicPostRequestSceneInteractor.swift */; };
 		11C6CF11298A16B2008078F4 /* BasicPostRequestScenePresenterContract.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11C6CF05298A16B2008078F4 /* BasicPostRequestScenePresenterContract.swift */; };
+		11EA0131298B6F890016537B /* Logger.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11EA0130298B6F890016537B /* Logger.swift */; };
+		11EA013F298B70B50016537B /* UploadImageSceneRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11EA0133298B70B50016537B /* UploadImageSceneRouter.swift */; };
+		11EA0141298B70B50016537B /* UploadImageSceneViewControllerContract.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11EA0135298B70B50016537B /* UploadImageSceneViewControllerContract.swift */; };
+		11EA0142298B70B50016537B /* UploadImageScenePresenterService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11EA0136298B70B50016537B /* UploadImageScenePresenterService.swift */; };
+		11EA0143298B70B50016537B /* UploadImageSceneInteractorContract.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11EA0137298B70B50016537B /* UploadImageSceneInteractorContract.swift */; };
+		11EA0144298B70B60016537B /* UploadImageSceneViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 11EA0138298B70B50016537B /* UploadImageSceneViewController.xib */; };
+		11EA0145298B70B60016537B /* UploadImageSceneInteractorService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11EA0139298B70B50016537B /* UploadImageSceneInteractorService.swift */; };
+		11EA0146298B70B60016537B /* UploadImageScenePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11EA013A298B70B50016537B /* UploadImageScenePresenter.swift */; };
+		11EA0147298B70B60016537B /* UploadImageSceneViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11EA013B298B70B50016537B /* UploadImageSceneViewController.swift */; };
+		11EA0148298B70B60016537B /* UploadImageSceneViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11EA013C298B70B50016537B /* UploadImageSceneViewModel.swift */; };
+		11EA0149298B70B60016537B /* UploadImageSceneInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11EA013D298B70B50016537B /* UploadImageSceneInteractor.swift */; };
+		11EA014A298B70B60016537B /* UploadImageScenePresenterContract.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11EA013E298B70B50016537B /* UploadImageScenePresenterContract.swift */; };
+		11EA0152298B74FE0016537B /* UploadImageRequestService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11EA0151298B74FE0016537B /* UploadImageRequestService.swift */; };
 		11F1A17D2982A2C700E8D6E5 /* AppRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11F1A17C2982A2C700E8D6E5 /* AppRouter.swift */; };
 		11F1A17F2982A41400E8D6E5 /* AppCore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11F1A17E2982A41400E8D6E5 /* AppCore.swift */; };
 		11F1A1812982A43D00E8D6E5 /* AppCoreContract.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11F1A1802982A43D00E8D6E5 /* AppCoreContract.swift */; };
@@ -118,6 +143,18 @@
 		114B0CFF29838CE600A35A38 /* BasicGetRequestSceneViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BasicGetRequestSceneViewModel.swift; sourceTree = "<group>"; };
 		114B0D0029838CE600A35A38 /* BasicGetRequestSceneInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BasicGetRequestSceneInteractor.swift; sourceTree = "<group>"; };
 		114B0D0129838CE600A35A38 /* BasicGetRequestScenePresenterContract.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BasicGetRequestScenePresenterContract.swift; sourceTree = "<group>"; };
+		118E77C42993EF8200D413DC /* BackgroundDownloadRequestSceneRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BackgroundDownloadRequestSceneRouter.swift; sourceTree = "<group>"; };
+		118E77C62993EF8200D413DC /* BackgroundDownloadRequestSceneViewControllerContract.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BackgroundDownloadRequestSceneViewControllerContract.swift; sourceTree = "<group>"; };
+		118E77C72993EF8200D413DC /* BackgroundDownloadRequestScenePresenterService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BackgroundDownloadRequestScenePresenterService.swift; sourceTree = "<group>"; };
+		118E77C82993EF8200D413DC /* BackgroundDownloadRequestSceneInteractorContract.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BackgroundDownloadRequestSceneInteractorContract.swift; sourceTree = "<group>"; };
+		118E77C92993EF8200D413DC /* BackgroundDownloadRequestSceneViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = BackgroundDownloadRequestSceneViewController.xib; sourceTree = "<group>"; };
+		118E77CA2993EF8200D413DC /* BackgroundDownloadRequestSceneInteractorService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BackgroundDownloadRequestSceneInteractorService.swift; sourceTree = "<group>"; };
+		118E77CB2993EF8200D413DC /* BackgroundDownloadRequestScenePresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BackgroundDownloadRequestScenePresenter.swift; sourceTree = "<group>"; };
+		118E77CC2993EF8200D413DC /* BackgroundDownloadRequestSceneViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BackgroundDownloadRequestSceneViewController.swift; sourceTree = "<group>"; };
+		118E77CD2993EF8200D413DC /* BackgroundDownloadRequestSceneViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BackgroundDownloadRequestSceneViewModel.swift; sourceTree = "<group>"; };
+		118E77CE2993EF8200D413DC /* BackgroundDownloadRequestSceneInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BackgroundDownloadRequestSceneInteractor.swift; sourceTree = "<group>"; };
+		118E77CF2993EF8200D413DC /* BackgroundDownloadRequestScenePresenterContract.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BackgroundDownloadRequestScenePresenterContract.swift; sourceTree = "<group>"; };
+		118E77E42993FF7B00D413DC /* BackgroundRequestService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BackgroundRequestService.swift; sourceTree = "<group>"; };
 		11ABDA782982A15900C5AC1D /* NetworkTemplates.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NetworkTemplates.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		11ABDA7B2982A15900C5AC1D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		11ABDA842982A15C00C5AC1D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -134,6 +171,19 @@
 		11C6CF03298A16B2008078F4 /* BasicPostRequestSceneViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BasicPostRequestSceneViewModel.swift; sourceTree = "<group>"; };
 		11C6CF04298A16B2008078F4 /* BasicPostRequestSceneInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BasicPostRequestSceneInteractor.swift; sourceTree = "<group>"; };
 		11C6CF05298A16B2008078F4 /* BasicPostRequestScenePresenterContract.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BasicPostRequestScenePresenterContract.swift; sourceTree = "<group>"; };
+		11EA0130298B6F890016537B /* Logger.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Logger.swift; sourceTree = "<group>"; };
+		11EA0133298B70B50016537B /* UploadImageSceneRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UploadImageSceneRouter.swift; sourceTree = "<group>"; };
+		11EA0135298B70B50016537B /* UploadImageSceneViewControllerContract.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UploadImageSceneViewControllerContract.swift; sourceTree = "<group>"; };
+		11EA0136298B70B50016537B /* UploadImageScenePresenterService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UploadImageScenePresenterService.swift; sourceTree = "<group>"; };
+		11EA0137298B70B50016537B /* UploadImageSceneInteractorContract.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UploadImageSceneInteractorContract.swift; sourceTree = "<group>"; };
+		11EA0138298B70B50016537B /* UploadImageSceneViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = UploadImageSceneViewController.xib; sourceTree = "<group>"; };
+		11EA0139298B70B50016537B /* UploadImageSceneInteractorService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UploadImageSceneInteractorService.swift; sourceTree = "<group>"; };
+		11EA013A298B70B50016537B /* UploadImageScenePresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UploadImageScenePresenter.swift; sourceTree = "<group>"; };
+		11EA013B298B70B50016537B /* UploadImageSceneViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UploadImageSceneViewController.swift; sourceTree = "<group>"; };
+		11EA013C298B70B50016537B /* UploadImageSceneViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UploadImageSceneViewModel.swift; sourceTree = "<group>"; };
+		11EA013D298B70B50016537B /* UploadImageSceneInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UploadImageSceneInteractor.swift; sourceTree = "<group>"; };
+		11EA013E298B70B50016537B /* UploadImageScenePresenterContract.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UploadImageScenePresenterContract.swift; sourceTree = "<group>"; };
+		11EA0151298B74FE0016537B /* UploadImageRequestService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UploadImageRequestService.swift; sourceTree = "<group>"; };
 		11F1A17C2982A2C700E8D6E5 /* AppRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppRouter.swift; sourceTree = "<group>"; };
 		11F1A17E2982A41400E8D6E5 /* AppCore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppCore.swift; sourceTree = "<group>"; };
 		11F1A1802982A43D00E8D6E5 /* AppCoreContract.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppCoreContract.swift; sourceTree = "<group>"; };
@@ -176,8 +226,10 @@
 		112D4C47298A984700C8AC95 /* Service */ = {
 			isa = PBXGroup;
 			children = (
+				118E77E32993FF6300D413DC /* BackgroundRequestService */,
 				112D4C57298AD64900C8AC95 /* FetchImageService */,
 				112D4C5A298AD8F200C8AC95 /* BasicRequestService */,
+				11EA0150298B71AD0016537B /* UploadImageService */,
 			);
 			path = Service;
 			sourceTree = "<group>";
@@ -439,6 +491,88 @@
 			path = Service;
 			sourceTree = "<group>";
 		};
+		118E77C32993EF5700D413DC /* BackgroundDownloadRequestScene */ = {
+			isa = PBXGroup;
+			children = (
+				118E77DC2993F43200D413DC /* Router */,
+				118E77E02993F46200D413DC /* ViewModel */,
+				118E77DF2993F45700D413DC /* Interactor */,
+				118E77DE2993F44E00D413DC /* Presenter */,
+				118E77DD2993F44600D413DC /* View */,
+			);
+			path = BackgroundDownloadRequestScene;
+			sourceTree = "<group>";
+		};
+		118E77DC2993F43200D413DC /* Router */ = {
+			isa = PBXGroup;
+			children = (
+				118E77C42993EF8200D413DC /* BackgroundDownloadRequestSceneRouter.swift */,
+			);
+			path = Router;
+			sourceTree = "<group>";
+		};
+		118E77DD2993F44600D413DC /* View */ = {
+			isa = PBXGroup;
+			children = (
+				118E77CC2993EF8200D413DC /* BackgroundDownloadRequestSceneViewController.swift */,
+				118E77C92993EF8200D413DC /* BackgroundDownloadRequestSceneViewController.xib */,
+				118E77C62993EF8200D413DC /* BackgroundDownloadRequestSceneViewControllerContract.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		118E77DE2993F44E00D413DC /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				118E77E12993F48600D413DC /* Service */,
+				118E77CB2993EF8200D413DC /* BackgroundDownloadRequestScenePresenter.swift */,
+				118E77CF2993EF8200D413DC /* BackgroundDownloadRequestScenePresenterContract.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		118E77DF2993F45700D413DC /* Interactor */ = {
+			isa = PBXGroup;
+			children = (
+				118E77E22993F48D00D413DC /* Service */,
+				118E77CE2993EF8200D413DC /* BackgroundDownloadRequestSceneInteractor.swift */,
+				118E77C82993EF8200D413DC /* BackgroundDownloadRequestSceneInteractorContract.swift */,
+			);
+			path = Interactor;
+			sourceTree = "<group>";
+		};
+		118E77E02993F46200D413DC /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				118E77CD2993EF8200D413DC /* BackgroundDownloadRequestSceneViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		118E77E12993F48600D413DC /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				118E77C72993EF8200D413DC /* BackgroundDownloadRequestScenePresenterService.swift */,
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
+		118E77E22993F48D00D413DC /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				118E77CA2993EF8200D413DC /* BackgroundDownloadRequestSceneInteractorService.swift */,
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
+		118E77E32993FF6300D413DC /* BackgroundRequestService */ = {
+			isa = PBXGroup;
+			children = (
+				118E77E42993FF7B00D413DC /* BackgroundRequestService.swift */,
+			);
+			path = BackgroundRequestService;
+			sourceTree = "<group>";
+		};
 		11ABDA6F2982A15900C5AC1D = {
 			isa = PBXGroup;
 			children = (
@@ -541,6 +675,80 @@
 			path = Service;
 			sourceTree = "<group>";
 		};
+		11EA012F298B6F720016537B /* Logger */ = {
+			isa = PBXGroup;
+			children = (
+				11EA0130298B6F890016537B /* Logger.swift */,
+			);
+			path = Logger;
+			sourceTree = "<group>";
+		};
+		11EA0132298B707F0016537B /* UploadImageScene */ = {
+			isa = PBXGroup;
+			children = (
+				11EA014B298B70D00016537B /* Router */,
+				11EA014F298B70FE0016537B /* ViewModel */,
+				11EA014E298B70F50016537B /* Interactor */,
+				11EA014D298B70EA0016537B /* Presenter */,
+				11EA014C298B70DD0016537B /* View */,
+			);
+			path = UploadImageScene;
+			sourceTree = "<group>";
+		};
+		11EA014B298B70D00016537B /* Router */ = {
+			isa = PBXGroup;
+			children = (
+				11EA0133298B70B50016537B /* UploadImageSceneRouter.swift */,
+			);
+			path = Router;
+			sourceTree = "<group>";
+		};
+		11EA014C298B70DD0016537B /* View */ = {
+			isa = PBXGroup;
+			children = (
+				11EA0135298B70B50016537B /* UploadImageSceneViewControllerContract.swift */,
+				11EA0138298B70B50016537B /* UploadImageSceneViewController.xib */,
+				11EA013B298B70B50016537B /* UploadImageSceneViewController.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		11EA014D298B70EA0016537B /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				11EA0136298B70B50016537B /* UploadImageScenePresenterService.swift */,
+				11EA013A298B70B50016537B /* UploadImageScenePresenter.swift */,
+				11EA013E298B70B50016537B /* UploadImageScenePresenterContract.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		11EA014E298B70F50016537B /* Interactor */ = {
+			isa = PBXGroup;
+			children = (
+				11EA0137298B70B50016537B /* UploadImageSceneInteractorContract.swift */,
+				11EA0139298B70B50016537B /* UploadImageSceneInteractorService.swift */,
+				11EA013D298B70B50016537B /* UploadImageSceneInteractor.swift */,
+			);
+			path = Interactor;
+			sourceTree = "<group>";
+		};
+		11EA014F298B70FE0016537B /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				11EA013C298B70B50016537B /* UploadImageSceneViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		11EA0150298B71AD0016537B /* UploadImageService */ = {
+			isa = PBXGroup;
+			children = (
+				11EA0151298B74FE0016537B /* UploadImageRequestService.swift */,
+			);
+			path = UploadImageService;
+			sourceTree = "<group>";
+		};
 		11F1A1762982A1DF00E8D6E5 /* Application */ = {
 			isa = PBXGroup;
 			children = (
@@ -598,6 +806,7 @@
 			isa = PBXGroup;
 			children = (
 				11F2051C29842D9200373AC6 /* Models */,
+				11EA012F298B6F720016537B /* Logger */,
 				11424ACB2982E54D00EB88EE /* StyleLayer */,
 				11424AA22982D45000EB88EE /* DeviceLayer */,
 				11F1A1872982A50F00E8D6E5 /* NetworkLayer */,
@@ -634,6 +843,8 @@
 				11424AA72982D6FC00EB88EE /* ImageDownloadScene */,
 				114B0CF529838CB600A35A38 /* BasicGetRequestScene */,
 				11C6CEF9298A1668008078F4 /* BasicPostRequestScene */,
+				11EA0132298B707F0016537B /* UploadImageScene */,
+				118E77C32993EF5700D413DC /* BackgroundDownloadRequestScene */,
 			);
 			path = Modules;
 			sourceTree = "<group>";
@@ -833,6 +1044,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				11EA0144298B70B60016537B /* UploadImageSceneViewController.xib in Resources */,
 				11F1A19E2982A66800E8D6E5 /* InitialSceneViewController.xib in Resources */,
 				11424A9B2982B69E00EB88EE /* InitialSceneTableViewCell.xib in Resources */,
 				114B0D0729838CE600A35A38 /* BasicGetRequestSceneViewController.xib in Resources */,
@@ -841,6 +1053,7 @@
 				11ABDA852982A15C00C5AC1D /* Assets.xcassets in Resources */,
 				11C6CF0B298A16B2008078F4 /* BasicPostRequestSceneViewController.xib in Resources */,
 				11F205262984416F00373AC6 /* BasicRequestTableViewCell.xib in Resources */,
+				118E77D52993EF8200D413DC /* BackgroundDownloadRequestSceneViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -851,15 +1064,20 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				118E77D22993EF8200D413DC /* BackgroundDownloadRequestSceneViewControllerContract.swift in Sources */,
 				11F1A19D2982A66800E8D6E5 /* InitialSceneInteractorContract.swift in Sources */,
+				11EA0146298B70B60016537B /* UploadImageScenePresenter.swift in Sources */,
 				11F1A1812982A43D00E8D6E5 /* AppCoreContract.swift in Sources */,
 				11C6CF0F298A16B2008078F4 /* BasicPostRequestSceneViewModel.swift in Sources */,
+				118E77D92993EF8200D413DC /* BackgroundDownloadRequestSceneViewModel.swift in Sources */,
 				11F1A1A02982A66800E8D6E5 /* InitialScenePresenter.swift in Sources */,
 				11F1A1B02982A94700E8D6E5 /* TableViewProviderViewModelType.swift in Sources */,
+				11EA0152298B74FE0016537B /* UploadImageRequestService.swift in Sources */,
 				11F1A17F2982A41400E8D6E5 /* AppCore.swift in Sources */,
 				11F1A1A42982A66800E8D6E5 /* InitialScenePresenterContract.swift in Sources */,
 				114B0D0929838CE600A35A38 /* BasicGetRequestScenePresenter.swift in Sources */,
 				11F1A19B2982A66800E8D6E5 /* InitialSceneViewControllerContract.swift in Sources */,
+				11EA0143298B70B50016537B /* UploadImageSceneInteractorContract.swift in Sources */,
 				11424AB82982D72C00EB88EE /* ImageDownloadSceneInteractorContract.swift in Sources */,
 				11424ABC2982D72C00EB88EE /* ImageDownloadSceneViewController.swift in Sources */,
 				11424AD22982F79300EB88EE /* Publisher.swift in Sources */,
@@ -867,8 +1085,10 @@
 				11424AB62982D72C00EB88EE /* ImageDownloadSceneViewControllerContract.swift in Sources */,
 				11C6CF0D298A16B2008078F4 /* BasicPostRequestScenePresenter.swift in Sources */,
 				11424A922982B51700EB88EE /* InitialSceneViewModelContract.swift in Sources */,
+				118E77D72993EF8200D413DC /* BackgroundDownloadRequestScenePresenter.swift in Sources */,
 				114B0D0A29838CE600A35A38 /* BasicGetRequestSceneViewController.swift in Sources */,
 				11424ACA2982D82A00EB88EE /* BackButton.swift in Sources */,
+				11EA0147298B70B60016537B /* UploadImageSceneViewController.swift in Sources */,
 				114B0D0529838CE600A35A38 /* BasicGetRequestScenePresenterService.swift in Sources */,
 				11F1A19C2982A66800E8D6E5 /* InitialScenePresenterService.swift in Sources */,
 				11424ABB2982D72C00EB88EE /* ImageDownloadScenePresenter.swift in Sources */,
@@ -877,25 +1097,36 @@
 				11F1A19F2982A66800E8D6E5 /* InitialSceneInteractorService.swift in Sources */,
 				11424A9C2982B69E00EB88EE /* InitialSceneTableViewCell.swift in Sources */,
 				114B0D0C29838CE600A35A38 /* BasicGetRequestSceneInteractor.swift in Sources */,
+				118E77D82993EF8200D413DC /* BackgroundDownloadRequestSceneViewController.swift in Sources */,
 				11F1A17D2982A2C700E8D6E5 /* AppRouter.swift in Sources */,
+				11EA0141298B70B50016537B /* UploadImageSceneViewControllerContract.swift in Sources */,
 				11C6CF0C298A16B2008078F4 /* BasicPostRequestSceneInteractorService.swift in Sources */,
+				118E77D32993EF8200D413DC /* BackgroundDownloadRequestScenePresenterService.swift in Sources */,
 				11C6CF0A298A16B2008078F4 /* BasicPostRequestSceneInteractorContract.swift in Sources */,
 				11F205272984416F00373AC6 /* BasicRequestTableViewCell.swift in Sources */,
 				11F1A1B22982A9EC00E8D6E5 /* TableViewProviderType.swift in Sources */,
 				11F1A1842982A4D300E8D6E5 /* NetworkLayer.swift in Sources */,
+				118E77DA2993EF8200D413DC /* BackgroundDownloadRequestSceneInteractor.swift in Sources */,
 				11F1A1A32982A66800E8D6E5 /* InitialSceneInteractor.swift in Sources */,
 				11F1A1A12982A66800E8D6E5 /* InitialSceneViewController.swift in Sources */,
 				114B0D0D29838CE600A35A38 /* BasicGetRequestScenePresenterContract.swift in Sources */,
+				11EA0148298B70B60016537B /* UploadImageSceneViewModel.swift in Sources */,
 				114B0D0829838CE600A35A38 /* BasicGetRequestSceneInteractorService.swift in Sources */,
+				118E77D42993EF8200D413DC /* BackgroundDownloadRequestSceneInteractorContract.swift in Sources */,
 				11C6CF11298A16B2008078F4 /* BasicPostRequestScenePresenterContract.swift in Sources */,
 				11424AA62982D4A500EB88EE /* DeviceLayerType.swift in Sources */,
 				11424ABA2982D72C00EB88EE /* ImageDownloadSceneInteractorService.swift in Sources */,
+				11EA0145298B70B60016537B /* UploadImageSceneInteractorService.swift in Sources */,
 				112D4C5C298AD93500C8AC95 /* BasicRequestService.swift in Sources */,
+				118E77D02993EF8200D413DC /* BackgroundDownloadRequestSceneRouter.swift in Sources */,
 				11C6CF06298A16B2008078F4 /* BasicPostRequestSceneRouter.swift in Sources */,
 				11424ABE2982D72C00EB88EE /* ImageDownloadSceneInteractor.swift in Sources */,
 				11F1A1AE2982A88400E8D6E5 /* TableViewProvider.swift in Sources */,
+				118E77D62993EF8200D413DC /* BackgroundDownloadRequestSceneInteractorService.swift in Sources */,
 				114B0D0B29838CE600A35A38 /* BasicGetRequestSceneViewModel.swift in Sources */,
 				11C6CF0E298A16B2008078F4 /* BasicPostRequestSceneViewController.swift in Sources */,
+				11EA0142298B70B50016537B /* UploadImageScenePresenterService.swift in Sources */,
+				118E77E52993FF7B00D413DC /* BackgroundRequestService.swift in Sources */,
 				114B0D0429838CE600A35A38 /* BasicGetRequestSceneViewControllerContract.swift in Sources */,
 				114B0D0629838CE600A35A38 /* BasicGetRequestSceneInteractorContract.swift in Sources */,
 				11F1A1A22982A66800E8D6E5 /* InitialSceneViewModel.swift in Sources */,
@@ -903,8 +1134,11 @@
 				11424A9F2982B79500EB88EE /* InitialSceneTableViewCellViewModel.swift in Sources */,
 				11424ABD2982D72C00EB88EE /* ImageDownloadSceneViewModel.swift in Sources */,
 				11F1A1B42982AC3900E8D6E5 /* NibLoadableView.swift in Sources */,
+				11EA014A298B70B60016537B /* UploadImageScenePresenterContract.swift in Sources */,
 				11F1A19A2982A66800E8D6E5 /* InitialSceneRouterContract.swift in Sources */,
+				118E77DB2993EF8200D413DC /* BackgroundDownloadRequestScenePresenterContract.swift in Sources */,
 				112D4C59298AD66200C8AC95 /* FetchImageService.swift in Sources */,
+				11EA013F298B70B50016537B /* UploadImageSceneRouter.swift in Sources */,
 				11424ABF2982D72C00EB88EE /* ImageDownloadScenePresenterContract.swift in Sources */,
 				11F2051F29842DC400373AC6 /* BasicRequestModel.swift in Sources */,
 				11F1A1992982A66800E8D6E5 /* InitialSceneRouter.swift in Sources */,
@@ -916,7 +1150,9 @@
 				11424AB42982D72C00EB88EE /* ImageDownloadSceneRouter.swift in Sources */,
 				11424ACD2982E56B00EB88EE /* StyleLayerType.swift in Sources */,
 				114B0D0229838CE600A35A38 /* BasicGetRequestSceneRouter.swift in Sources */,
+				11EA0149298B70B60016537B /* UploadImageSceneInteractor.swift in Sources */,
 				11424ACF2982E62200EB88EE /* StyleLayer.swift in Sources */,
+				11EA0131298B6F890016537B /* Logger.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

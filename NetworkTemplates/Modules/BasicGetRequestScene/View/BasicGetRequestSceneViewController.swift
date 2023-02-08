@@ -28,7 +28,6 @@ class BasicGetRequestSceneViewController: BaseViewController<BasicGetRequestScen
 		interactor?.makeRequest(requestType: .initialSetup)
 	}
     
-    
     @IBAction private func backButtonAction(_ sender: BackButton) {
         interactor?.makeRequest(requestType: .routeBack)
     }
@@ -43,7 +42,6 @@ class BasicGetRequestSceneViewController: BaseViewController<BasicGetRequestScen
     @IBOutlet private weak var backButton: BackButton!
     @IBOutlet private weak var sceneTitle: UILabel!
     @IBOutlet private weak var tableView: UITableView!
-    
 }
 
 extension BasicGetRequestSceneViewController: BasicGetRequestSceneViewControllerType {

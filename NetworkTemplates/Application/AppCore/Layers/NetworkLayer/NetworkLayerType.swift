@@ -11,6 +11,7 @@ enum NetworkLayerActionType {
     case fetchImage
     case basicGetRequest
     case basicPostRequest(withData: BasicRequestModel)
+    case backgroundRequest
 }
 
 protocol NetworkLayerType {

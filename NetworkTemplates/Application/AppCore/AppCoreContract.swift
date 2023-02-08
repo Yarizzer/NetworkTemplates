@@ -10,7 +10,7 @@ protocol AppNetworkable {
 }
 
 protocol AppDeviceable {
-    var networkLayer: NetworkLayerType { get }
+    var deviceLayer: DeviceLayerType { get }
 }
 
 protocol AppStyleable {

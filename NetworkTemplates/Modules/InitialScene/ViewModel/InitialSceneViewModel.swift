@@ -17,6 +17,7 @@ class InitialSceneViewModel {
         self.types.append(.imageDownload)
         self.types.append(.basicGetRequest)
         self.types.append(.basicPostRequest)
+        self.types.append(.backgroundDownloadRequest)
     }
     
     private var types = [InitialSceneCellType]()

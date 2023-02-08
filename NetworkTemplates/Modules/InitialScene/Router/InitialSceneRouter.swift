@@ -17,8 +17,9 @@ class InitialSceneRouter {
 	private func prepareDestinationScene(with type: InitialSceneRoutableContractData.InitialSceneRoutableSceneType) -> UIViewController {
 		switch type {
         case .imageDownload: return ImageDownloadSceneRouter.assembly()
-        case .basicGetResponse: return BasicGetRequestSceneRouter.assembly()
-        case .basicPostREsponse: return BasicPostRequestSceneRouter.assembly()
+        case .basicGetRequest: return BasicGetRequestSceneRouter.assembly()
+        case .basicPostRequest: return BasicPostRequestSceneRouter.assembly()
+        case .backgroundDownloadRequest: return BackgroundDownloadRequestSceneRouter.assembly()
 		}
 	}
 	

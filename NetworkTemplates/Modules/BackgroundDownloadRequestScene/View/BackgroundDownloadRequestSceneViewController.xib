@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_0" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="BackgroundDownloadRequestSceneViewController">
+            <connections>
+                <outlet property="backButton" destination="hgr-FN-Wa5" id="z88-PV-1C9"/>
+                <outlet property="progressLabel" destination="YCn-mU-HSN" id="UdX-DZ-Rsl"/>
+                <outlet property="progressView" destination="p9o-Ff-Tvl" id="GXT-e6-bft"/>
+                <outlet property="sceneTitle" destination="bxU-2E-fKU" id="fnU-gd-Fqr"/>
+                <outlet property="topPaddingConstraint" destination="f3I-Sm-KiC" id="B8f-xq-lDP"/>
+                <outlet property="view" destination="iN0-l3-epB" id="T2C-zL-GX5"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" userLabel="Canvas">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="F0S-sf-IKf" userLabel="Header View">
+                    <rect key="frame" x="0.0" y="0.0" width="320" height="50"/>
+                    <subviews>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hgr-FN-Wa5" customClass="BackButton" customModule="NetworkTemplates" customModuleProvider="target">
+                            <rect key="frame" x="10" y="5" width="40" height="40"/>
+                            <constraints>
+                                <constraint firstAttribute="width" secondItem="hgr-FN-Wa5" secondAttribute="height" multiplier="1:1" id="GRS-Ra-udU"/>
+                            </constraints>
+                            <state key="normal" title="Button"/>
+                            <buttonConfiguration key="configuration" style="plain"/>
+                            <connections>
+                                <action selector="backButtonAction:" destination="-1" eventType="touchUpInside" id="x2T-y5-IZ1"/>
+                            </connections>
+                        </button>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Title" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bxU-2E-fKU">
+                            <rect key="frame" x="10" y="10" width="300" height="30"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    <constraints>
+                        <constraint firstItem="hgr-FN-Wa5" firstAttribute="top" secondItem="F0S-sf-IKf" secondAttribute="top" constant="5" id="Te0-1S-PcI"/>
+                        <constraint firstItem="bxU-2E-fKU" firstAttribute="top" secondItem="F0S-sf-IKf" secondAttribute="top" constant="10" id="gdG-U0-W11"/>
+                        <constraint firstAttribute="trailing" secondItem="bxU-2E-fKU" secondAttribute="trailing" constant="10" id="gv6-1o-0yV"/>
+                        <constraint firstAttribute="bottom" secondItem="hgr-FN-Wa5" secondAttribute="bottom" constant="5" id="oJC-Zy-27G"/>
+                        <constraint firstItem="hgr-FN-Wa5" firstAttribute="leading" secondItem="F0S-sf-IKf" secondAttribute="leading" constant="10" id="ql3-HB-2TM"/>
+                        <constraint firstAttribute="height" constant="50" id="sAO-Hb-sEI"/>
+                        <constraint firstAttribute="bottom" secondItem="bxU-2E-fKU" secondAttribute="bottom" constant="10" id="uVb-Ai-7Ic"/>
+                        <constraint firstItem="bxU-2E-fKU" firstAttribute="leading" secondItem="F0S-sf-IKf" secondAttribute="leading" constant="10" id="xFi-uc-23k"/>
+                    </constraints>
+                </view>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YCn-mU-HSN">
+                    <rect key="frame" x="50" y="410" width="220" height="20"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="20" id="uJm-2G-2EQ"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" progress="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="p9o-Ff-Tvl">
+                    <rect key="frame" x="10" y="440" width="300" height="4"/>
+                </progressView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GrJ-6o-8Cc">
+                    <rect key="frame" x="128" y="454" width="64" height="64"/>
+                    <constraints>
+                        <constraint firstAttribute="width" secondItem="GrJ-6o-8Cc" secondAttribute="height" multiplier="1:1" id="cb9-Ha-Jje"/>
+                    </constraints>
+                    <state key="normal" title="Button"/>
+                    <buttonConfiguration key="configuration" style="plain" title="Tap me"/>
+                    <connections>
+                        <action selector="tapMeButtonAction:" destination="-1" eventType="touchUpInside" id="or3-dp-Wlr"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="GrJ-6o-8Cc" firstAttribute="width" secondItem="iN0-l3-epB" secondAttribute="width" multiplier="1:5" id="0Zm-Kq-Xzl"/>
+                <constraint firstItem="F0S-sf-IKf" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="3kO-Is-TYS"/>
+                <constraint firstAttribute="trailing" secondItem="YCn-mU-HSN" secondAttribute="trailing" constant="50" id="BmK-BA-QWs"/>
+                <constraint firstAttribute="bottom" secondItem="GrJ-6o-8Cc" secondAttribute="bottom" constant="50" id="CpN-LM-Dz8"/>
+                <constraint firstItem="GrJ-6o-8Cc" firstAttribute="top" secondItem="p9o-Ff-Tvl" secondAttribute="bottom" constant="10" id="E1e-3g-ndP"/>
+                <constraint firstItem="p9o-Ff-Tvl" firstAttribute="top" secondItem="YCn-mU-HSN" secondAttribute="bottom" constant="10" id="FhE-UY-OM3"/>
+                <constraint firstAttribute="trailing" secondItem="p9o-Ff-Tvl" secondAttribute="trailing" constant="10" id="XPX-eP-ibO"/>
+                <constraint firstItem="F0S-sf-IKf" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="f3I-Sm-KiC"/>
+                <constraint firstItem="YCn-mU-HSN" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="50" id="gXS-6N-QiU"/>
+                <constraint firstItem="GrJ-6o-8Cc" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="kk6-WN-Cuu"/>
+                <constraint firstAttribute="trailing" secondItem="F0S-sf-IKf" secondAttribute="trailing" id="noc-5a-vMl"/>
+                <constraint firstItem="p9o-Ff-Tvl" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="10" id="tUB-Eo-Mfl"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <point key="canvasLocation" x="462" y="399"/>
+        </view>
+    </objects>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
