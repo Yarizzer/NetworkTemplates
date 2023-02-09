@@ -51,6 +51,9 @@ extension BackgroundDownloadRequestSceneViewController: BackgroundDownloadReques
             sceneTitle.text = model.sceneTitle
             progressLabel.text = model.progressLabel
             progressView.progress = model.progress
+        case .updateProgress(let model):
+            progressView.progress = model.progress
+            progressLabel.text = model.progressLabel
 		}
 	}
 }

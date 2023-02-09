@@ -15,6 +15,7 @@ class AppCore {
     }
     
     func prepareSession() {
+        networkLayer.prepareSession()
         networkLayer.runSubscription()
     }
     

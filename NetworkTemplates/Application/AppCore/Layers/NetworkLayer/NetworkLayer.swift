@@ -11,6 +11,11 @@ class NetworkLayer {
     init() {
         self.imageRequestService = FetchImageService()
         self.basicRequestService = BasicRequestService()
+        self.backgroundRequestService = BackgroundRequestService()
+    }
+    
+    func prepareSession() {
+        backgroundRequestService.prepareSession()
     }
     
     func runSubscription() {
@@ -21,16 +26,21 @@ class NetworkLayer {
         basicRequestService.data.subscribe(self) { [weak self] data in
             self?.basicRequestValue.value = data.newValue
         }
+        
+        backgroundRequestService.progress.subscribe(self) { [weak self] data in
+            self?.bgDownloadProgress.value = data.newValue
+        }
     }
     
     //Services
     private let imageRequestService: FetchImageServiceType
     private let basicRequestService: BasicRequestServiceType
-    private let backgroundRequestService: BackgroundRequestService
+    private let backgroundRequestService: BackgroundRequestServiceType
     
     //Publishers
     var imageData: Publisher<Data?> = Publisher(nil)
     var basicRequestValue: Publisher<[BasicRequestModel]?> = Publisher(nil)
+    var bgDownloadProgress: Publisher<Float?> = Publisher(nil)
 }
 
 extension NetworkLayer: NetworkLayerType {

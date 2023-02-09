@@ -7,6 +7,8 @@
 //
 
 protocol BackgroundDownloadRequestSceneInteractorServiceType{
+    func setupSubscription()
+    
 	func sendRequest()
 }
 
@@ -14,6 +16,10 @@ class BackgroundDownloadRequestSceneInteractorService {
 	init(withModel model: BackgroundDownloadRequestSceneViewModelType) {
 		self.model = model
 	}
+    
+    func setupSubscription() {
+        model.setupSubscription()
+    }
 	
 	private var model: BackgroundDownloadRequestSceneViewModelType
 }

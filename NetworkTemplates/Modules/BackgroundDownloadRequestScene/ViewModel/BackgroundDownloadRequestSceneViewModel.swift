@@ -7,6 +7,10 @@
 //
 
 protocol BackgroundDownloadRequestSceneViewModelType {
+    func setupSubscription()
+    
+    var shouldUpdateProgress: Publisher<Bool?> { get }
+    
     var sceneTitle: String { get }
     var progressLabel: String { get }
     var progress: Float { get }
@@ -20,7 +24,20 @@ class BackgroundDownloadRequestSceneViewModel {
         self.requestSent = false
     }
     
-    private var progressValue: Float
+    func setupSubscription() {
+        AppCore.shared.networkLayer.bgDownloadProgress.subscribe(self) { [weak self] data in
+            self?.progressValue = data.newValue ?? 0.0
+        }
+    }
+    
+    var shouldUpdateProgress: Publisher<Bool?> = Publisher(nil)
+    
+    private var progressValue: Float {
+        didSet {
+            self.shouldUpdateProgress.value = true
+        }
+    }
+    
     private var requestSent: Bool
 }
 
@@ -30,7 +47,7 @@ extension BackgroundDownloadRequestSceneViewModel: BackgroundDownloadRequestScen
     var progress: Float { return progressValue }
     
     func sendRequest() {
-        #warning("finish this part")
+        AppCore.shared.networkLayer.call(with: .backgroundRequest)
     }
 }
 
@@ -39,6 +56,6 @@ extension BackgroundDownloadRequestSceneViewModel {
         static let initialProgressValue: Float = 0.0
         static let sceneTitleValue = "Background download request scene"
         static let initialProgressLabelValue = "Tap button below to start download"
-        static let progressLabelValue = "Dowload in progress: "
+        static let progressLabelValue = "Download in progress: "
     }
 }

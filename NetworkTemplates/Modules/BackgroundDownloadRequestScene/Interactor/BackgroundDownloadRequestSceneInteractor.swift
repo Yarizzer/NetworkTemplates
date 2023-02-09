@@ -21,7 +21,9 @@ class BackgroundDownloadRequestSceneInteractor {
 extension BackgroundDownloadRequestSceneInteractor: BackgroundDownloadRequestSceneInteractable {
 	func makeRequest(requestType: BackgroundDownloadRequestSceneInteractorRequest.RequestType) {
 		switch requestType {
-		case .initialSetup: presenter.response(responseType: .initialSetup)
+		case .initialSetup:
+            service.setupSubscription()
+            presenter.response(responseType: .initialSetup)
         case .sendDownloadRequest: service.sendRequest()
         case .routeBack:
             presenter.response(responseType: .releaseView)

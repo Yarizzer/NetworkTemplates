@@ -13,5 +13,6 @@ protocol BackgroundDownloadRequestSceneViewControllerType {
 struct BackgroundDownloadRequestSceneViewControllerViewModel {
 	enum ViewModelDataType {
 		case initialSetup(with: BackgroundDownloadRequestSceneViewModelType)
+        case updateProgress(with: BackgroundDownloadRequestSceneViewModelType)
 	}
 }

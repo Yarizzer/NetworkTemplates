@@ -10,6 +10,10 @@ class BackgroundDownloadRequestScenePresenter {
 	init(for view: BackgroundDownloadRequestSceneViewControllerType, service: BackgroundDownloadRequestScenePresenterServiceType) {
 		self.viewController = view
 		self.service = service
+        
+        service.model.shouldUpdateProgress.subscribe(self) { [weak self] data in
+            self?.viewController?.update(viewModelDataType: .updateProgress(with: service.model))
+        }
 	}
 	
 	private var viewController: BackgroundDownloadRequestSceneViewControllerType?

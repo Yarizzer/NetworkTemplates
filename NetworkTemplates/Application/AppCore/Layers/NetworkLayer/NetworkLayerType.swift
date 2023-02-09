@@ -15,10 +15,12 @@ enum NetworkLayerActionType {
 }
 
 protocol NetworkLayerType {
+    func prepareSession()
     func runSubscription()
     //Publishers
     var imageData: Publisher<Data?> { get }
     var basicRequestValue: Publisher<[BasicRequestModel]?> { get }
+    var bgDownloadProgress: Publisher<Float?> { get }
     
     func call(with action: NetworkLayerActionType)
 }

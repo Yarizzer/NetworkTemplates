@@ -9,9 +9,10 @@ import Foundation
 
 protocol BackgroundRequestServiceType {
     func prepareSession()
+    
     //Publishers
     var fileLocation: Publisher<URL?> { get }
-    var progress: Publisher<Double?> { get }
+    var progress: Publisher<Float?> { get }
     
     func fetchData()
     func stopDownload()
@@ -19,14 +20,14 @@ protocol BackgroundRequestServiceType {
 
 class BackgroundRequestService: NSObject {
     func prepareSession() {
-        let configuration = URLSessionConfiguration.background(withIdentifier: Constants.sessionConfigurationID)
-        configuration.isDiscretionary = true
-        configuration.sessionSendsLaunchEvents = true
-        self.bgSession = URLSession(configuration: configuration, delegate: self, delegateQueue: nil)
+        let cnfg = URLSessionConfiguration.background(withIdentifier: Constants.sessionConfigurationID)
+        cnfg.isDiscretionary = true
+        cnfg.sessionSendsLaunchEvents = true
+        self.bgSession = URLSession(configuration: cnfg, delegate: self, delegateQueue: nil)
     }
     //Publishers
     var fileLocation: Publisher<URL?> = Publisher(nil)
-    var progress: Publisher<Double?> = Publisher(nil)
+    var progress: Publisher<Float?> = Publisher(nil)
     
     private var bgSession: URLSession?
     private var downloadTask: URLSessionDownloadTask?
@@ -55,12 +56,19 @@ extension BackgroundRequestService: URLSessionDownloadDelegate {
         }
     }
     
-    
+    func urlSession(_ session: URLSession, downloadTask: URLSessionDownloadTask, didWriteData bytesWritten: Int64, totalBytesWritten: Int64, totalBytesExpectedToWrite: Int64) {
+        
+        guard totalBytesExpectedToWrite != NSURLSessionTransferSizeUnknown else { return }
+        
+        DispatchQueue.main.async { [weak self] in
+            self?.progress.value = Float(Double(totalBytesWritten)/Double(totalBytesExpectedToWrite))
+        }
+    }
 }
 
 extension BackgroundRequestService {
     private struct Constants {
         static let sessionConfigurationID = "sessionConfigurationID"
-        static let urlValue = "https://speed.hetzner.de/100MB.bin"
+        static let urlValue = "http://speedtest.ftp.otenet.gr/files/test100Mb.db"
     }
 }

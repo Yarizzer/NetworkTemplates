@@ -7,7 +7,7 @@
 //
 
 protocol BackgroundDownloadRequestScenePresenterServiceType{
-	var model: BackgroundDownloadRequestSceneViewModelType { get }
+    var model: BackgroundDownloadRequestSceneViewModelType { get }
 }
 
 class BackgroundDownloadRequestScenePresenterService {
